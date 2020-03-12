@@ -27,7 +27,7 @@ class App extends React.Component {
     };
 
     async fetchData() {
-        await fetch( Proxy + Query )
+            await fetch( Proxy + Query )
             .then(response => response.json())
             .then(data => {
                 this.setState({

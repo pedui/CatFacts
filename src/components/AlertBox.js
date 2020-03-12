@@ -1,18 +1,16 @@
 import React from "react";
-import {Alert} from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 
-class AlertBox extends React.Component {
+const AlertBox = (props) => {
 
-    render() {
-        return (
-            <Alert variant={"danger"}>
-                <Alert.Heading>Whoops! You got an error! :(</Alert.Heading>
-                <p>
-                    The error message received: {this.props.children}
-                </p>
-            </Alert>
-        )
-    }
-}
+    return (
+        <Alert variant={"danger"}>
+            <Alert.Heading>Whoops! You got an error! :(</Alert.Heading>
+            <p>
+                The error message received: {props.children}
+            </p>
+        </Alert>
+    );
+};
 
 export default AlertBox;
