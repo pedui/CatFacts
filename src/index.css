@@ -15,6 +15,12 @@ h5 {
   font-style: italic;
 }
 
+h6 {
+  padding-top: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
 Table {
   text-align: left;
 }
@@ -33,4 +39,5 @@ code {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 10px;
 }
